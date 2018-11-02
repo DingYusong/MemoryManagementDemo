@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F73571A4218B1F5C00541208 /* DYSMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73571A3218B1F5C00541208 /* DYSMemoryViewController.m */; };
+		F73571AA218C430700541208 /* DYSStrongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73571A9218C430700541208 /* DYSStrongViewController.m */; };
 		F78ED3702189B8AF0045823F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F78ED36F2189B8AF0045823F /* AppDelegate.m */; };
 		F78ED3732189B8AF0045823F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78ED3722189B8AF0045823F /* ViewController.m */; };
 		F78ED3762189B8AF0045823F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78ED3742189B8AF0045823F /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 /* Begin PBXFileReference section */
 		F73571A2218B1F5C00541208 /* DYSMemoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSMemoryViewController.h; sourceTree = "<group>"; };
 		F73571A3218B1F5C00541208 /* DYSMemoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSMemoryViewController.m; sourceTree = "<group>"; };
+		F73571A8218C430700541208 /* DYSStrongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSStrongViewController.h; sourceTree = "<group>"; };
+		F73571A9218C430700541208 /* DYSStrongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSStrongViewController.m; sourceTree = "<group>"; };
 		F78ED36B2189B8AF0045823F /* MemoryManagementDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryManagementDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78ED36E2189B8AF0045823F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F78ED36F2189B8AF0045823F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				F73571A3218B1F5C00541208 /* DYSMemoryViewController.m */,
 				F78ED3A62189BB2B0045823F /* DYSCopyViewController.h */,
 				F78ED3A72189BB2B0045823F /* DYSCopyViewController.m */,
+				F73571A8218C430700541208 /* DYSStrongViewController.h */,
+				F73571A9218C430700541208 /* DYSStrongViewController.m */,
 				F78ED3742189B8AF0045823F /* Main.storyboard */,
 				F78ED3772189B8B10045823F /* Assets.xcassets */,
 				F78ED3792189B8B10045823F /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 			files = (
 				F78ED3A82189BB2B0045823F /* DYSCopyViewController.m in Sources */,
 				F78ED3732189B8AF0045823F /* ViewController.m in Sources */,
+				F73571AA218C430700541208 /* DYSStrongViewController.m in Sources */,
 				F78ED37E2189B8B10045823F /* main.m in Sources */,
 				F78ED3702189B8AF0045823F /* AppDelegate.m in Sources */,
 				F73571A4218B1F5C00541208 /* DYSMemoryViewController.m in Sources */,

@@ -7,12 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "DYSStrongViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic ,strong) NSArray *dataSourceArray;
+
+@property (nonatomic ,strong) NSMutableString *mutableStr;
 
 @end
 
@@ -22,13 +25,19 @@
     [super viewDidLoad];
     
     
-    self.dataSourceArray = @[@{
-                            @"title":@"week",
-                            @"page":@"DYSCopyViewController"
-                            },
+    self.dataSourceArray = @[
                              @{
                                  @"title":@"MemoryDistribution",
                                  @"page":@"DYSMemoryViewController"
+                                 },
+                             @{
+                                 @"title":@"DYSCopyViewController",
+                                 @"page":@"DYSCopyViewController"
+                                 },
+
+                             @{
+                                 @"title":@"DYSStrongViewController",
+                                 @"page":@"DYSStrongViewController"
                                  }];
     
     self.tableView.rowHeight = 50;    
@@ -53,6 +62,17 @@
     NSDictionary *dict = [self.dataSourceArray objectAtIndex:indexPath.row];
     NSString *classString = [dict objectForKey:@"page"];
     UIViewController *vc = [NSClassFromString(classString) new];
+    
+    if ([classString isEqualToString:@"DYSStrongViewController"]) {
+        DYSStrongViewController *svc = (DYSStrongViewController *)vc;
+        self.mutableStr = [[NSMutableString alloc] initWithString:@"bbbb"];
+        svc.string_strong = self.mutableStr;
+        [self.navigationController pushViewController:svc animated:YES];
+        [self.mutableStr appendString:[[NSMutableString alloc] initWithString:@"cccc"]];
+        self.mutableStr = @"cccc";
+        return;
+    }
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 
