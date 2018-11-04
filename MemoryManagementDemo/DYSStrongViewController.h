@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DYSStrongViewController : UIViewController
 
-@property (nonatomic ,strong) NSString *string_strong;
+@property (nonatomic ,strong) NSString *strongString;
 
 @end
 

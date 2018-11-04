@@ -27,7 +27,7 @@
     
     self.dataSourceArray = @[
                              @{
-                                 @"title":@"MemoryDistribution",
+                                 @"title":@"DYSMemoryViewController",
                                  @"page":@"DYSMemoryViewController"
                                  },
                              @{
@@ -38,6 +38,11 @@
                              @{
                                  @"title":@"DYSStrongViewController",
                                  @"page":@"DYSStrongViewController"
+                                 },
+                             
+                             @{
+                                 @"title":@"DYSWeekViewController",
+                                 @"page":@"DYSWeekViewController"
                                  }];
     
     self.tableView.rowHeight = 50;    
@@ -66,7 +71,7 @@
     if ([classString isEqualToString:@"DYSStrongViewController"]) {
         DYSStrongViewController *svc = (DYSStrongViewController *)vc;
         self.mutableStr = [[NSMutableString alloc] initWithString:@"bbbb"];
-        svc.string_strong = self.mutableStr;
+        svc.strongString = self.mutableStr;
         [self.navigationController pushViewController:svc animated:YES];
         [self.mutableStr appendString:[[NSMutableString alloc] initWithString:@"cccc"]];
         self.mutableStr = @"cccc";
