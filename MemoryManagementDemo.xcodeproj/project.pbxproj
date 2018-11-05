@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		356265F0218DE24C001BC58F /* DYSDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 356265EF218DE24C001BC58F /* DYSDog.m */; };
 		356265F3218DE72F001BC58F /* DYSWeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 356265F2218DE72F001BC58F /* DYSWeekViewController.m */; };
+		356265F6219089BA001BC58F /* DYSAssignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 356265F5219089BA001BC58F /* DYSAssignViewController.m */; };
 		F73571A4218B1F5C00541208 /* DYSMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73571A3218B1F5C00541208 /* DYSMemoryViewController.m */; };
 		F73571AA218C430700541208 /* DYSStrongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73571A9218C430700541208 /* DYSStrongViewController.m */; };
 		F78ED3702189B8AF0045823F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F78ED36F2189B8AF0045823F /* AppDelegate.m */; };
@@ -25,6 +26,8 @@
 		356265EF218DE24C001BC58F /* DYSDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDog.m; sourceTree = "<group>"; };
 		356265F1218DE72F001BC58F /* DYSWeekViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSWeekViewController.h; sourceTree = "<group>"; };
 		356265F2218DE72F001BC58F /* DYSWeekViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSWeekViewController.m; sourceTree = "<group>"; };
+		356265F4219089BA001BC58F /* DYSAssignViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSAssignViewController.h; sourceTree = "<group>"; };
+		356265F5219089BA001BC58F /* DYSAssignViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSAssignViewController.m; sourceTree = "<group>"; };
 		F73571A2218B1F5C00541208 /* DYSMemoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSMemoryViewController.h; sourceTree = "<group>"; };
 		F73571A3218B1F5C00541208 /* DYSMemoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSMemoryViewController.m; sourceTree = "<group>"; };
 		F73571A8218C430700541208 /* DYSStrongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSStrongViewController.h; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				F73571A9218C430700541208 /* DYSStrongViewController.m */,
 				356265F1218DE72F001BC58F /* DYSWeekViewController.h */,
 				356265F2218DE72F001BC58F /* DYSWeekViewController.m */,
+				356265F4219089BA001BC58F /* DYSAssignViewController.h */,
+				356265F5219089BA001BC58F /* DYSAssignViewController.m */,
 				356265EE218DE24C001BC58F /* DYSDog.h */,
 				356265EF218DE24C001BC58F /* DYSDog.m */,
 				F78ED3742189B8AF0045823F /* Main.storyboard */,
@@ -169,6 +174,7 @@
 			files = (
 				F78ED3A82189BB2B0045823F /* DYSCopyViewController.m in Sources */,
 				F78ED3732189B8AF0045823F /* ViewController.m in Sources */,
+				356265F6219089BA001BC58F /* DYSAssignViewController.m in Sources */,
 				356265F0218DE24C001BC58F /* DYSDog.m in Sources */,
 				F73571AA218C430700541208 /* DYSStrongViewController.m in Sources */,
 				F78ED37E2189B8B10045823F /* main.m in Sources */,

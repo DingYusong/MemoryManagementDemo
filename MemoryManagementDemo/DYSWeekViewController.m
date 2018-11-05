@@ -7,9 +7,11 @@
 //
 
 #import "DYSWeekViewController.h"
+#import "DYSDog.h"
 
 @interface DYSWeekViewController ()
 @property (nonatomic ,weak) NSMutableString *weekMutableString;
+@property (nonatomic, weak) DYSDog *dog;
 
 @end
 
@@ -41,6 +43,15 @@
     
     NSLog(@"retain  count = %ld\n",CFGetRetainCount((__bridge  CFTypeRef)(str)));
 
+    
+    DYSDog *dog = [DYSDog new];
+    dog.name = @"欢欢";
+    dog.age = 3;
+    
+    self.dog = dog;
+    
+    NSLog(@"%p:self.dog",self.dog);
+
 }
 
 
@@ -49,8 +60,12 @@
     
     NSLog(@"%p:%@",self.weekMutableString,self.weekMutableString);
     
-    NSLog(@"retain  count = %ld\n",CFGetRetainCount((__bridge  CFTypeRef)(self.weekMutableString)));
+//    NSLog(@"retain  count = %ld\n",CFGetRetainCount((__bridge  CFTypeRef)(self.weekMutableString)));
     
+    //self.dog指针自动置为nil
+    //2018-11-05 22:32:08.470556+0800 MemoryManagementDemo[19064:959538] 0x0:self.dog
+    NSLog(@"%p:self.dog",self.dog);
+
 }
 
 /*

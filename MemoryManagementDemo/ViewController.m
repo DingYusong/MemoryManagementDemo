@@ -34,15 +34,17 @@
                                  @"title":@"DYSCopyViewController",
                                  @"page":@"DYSCopyViewController"
                                  },
-
                              @{
                                  @"title":@"DYSStrongViewController",
                                  @"page":@"DYSStrongViewController"
                                  },
-                             
                              @{
                                  @"title":@"DYSWeekViewController",
                                  @"page":@"DYSWeekViewController"
+                                 },
+                             @{
+                                 @"title":@"DYSAssignViewController",
+                                 @"page":@"DYSAssignViewController"
                                  }];
     
     self.tableView.rowHeight = 50;    
