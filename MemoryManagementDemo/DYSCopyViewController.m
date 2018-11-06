@@ -10,19 +10,14 @@
 
 @interface DYSCopyViewController ()
 
-@property (nonatomic ,strong) NSString *string_strong;
-@property (nonatomic ,strong) NSString *string_strong2;
-@property (nonatomic ,weak) NSString *string_week;
-@property (nonatomic ,assign) NSString *string_assign;
-
-
-@property (nonatomic ,retain) NSString *string_retain;
-
-@property (nonatomic ,assign) NSInteger inteValue;
-
-
-@property (nonatomic ,copy) NSString *stringCopy;
-@property (nonatomic ,copy) NSMutableString *mutableStringCopy;
+@property (nonatomic, strong) NSString *strongString;
+@property (nonatomic, strong) NSString *strongString2;
+@property (nonatomic, weak) NSString *weekString;
+@property (nonatomic, assign) NSString *assignString;
+@property (nonatomic, retain) NSString *retainString;
+@property (nonatomic, assign) NSInteger inteValue;
+@property (nonatomic, copy) NSString *stringCopy;
+@property (nonatomic, copy) NSMutableString *mutableStringCopy;
 
 @end
 
@@ -290,7 +285,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    NSLog(@"viewDidAppear:self.string_strong:%p",self.string_strong);
+    NSLog(@"viewDidAppear:self.strongString:%p",self.strongString);
 }
 
 /*
