@@ -50,9 +50,9 @@ const static NSString *globalConstStaticStr = @"cccc";
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-//    [self yyi_testAllArea];
+    [self yyi_testAllArea];
 //    [self yyi_testDataArea];
-    [self yyi_testString];
+//    [self yyi_testString];
 }
 
 - (void)yyi_testAllArea{
